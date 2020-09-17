@@ -7,8 +7,8 @@
 
 body{
     font-size: 11px;
-    text-align: center;
     font-size: 15px;
+    font-family: 'Spartan', sans-serif;
 }
 
 
@@ -16,20 +16,25 @@ a{
    text-decoration: none; 
 }
 
+ul{
+    list-style: none;
+}
 
 
 .container{
-    background-image: url(/images/bg-pattern-bottom-desktop.svg) ;
-    background-image: url(/images/bg-pattern-top-desktop.svg);
+    background-image: url(/images/bg-pattern-bottom-desktop.svg), url(/images/bg-pattern-top-desktop.svg) ;
+    background-repeat: no-repeat;
     width: 100%;
     max-width: 1440px;
     height: 100vh;
+    margin: 0 auto;
     
 
     .main{
         display: grid;
         width: 76%;
         height: 100vh;
+        
         margin: 0 auto;
         align-content: center;
         grid-template-columns: 1fr 1fr;
@@ -40,22 +45,176 @@ a{
          'users users';
 
         &-text{
-          
-            border: 5px dashed rgb(21, 131, 11);
+            width: 420px;
             grid-area: message;
+            text-align: left;
+            color: hsl(300, 43%, 22%);
+    
+            
+            h2{
+                font-size: 2.4rem;
+                font-weight: 700;
+                line-height: 1;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 14px;
+                line-height: 1.6;
+            }
             
         }
 
         &-rates{
-           
-            border: 5px dashed rgb(19, 104, 16);
+    
             grid-area: rate;
+            list-style: none;
+
+            &-review{
+                display: flex;
+                justify-content: space-between;
+
+                ul{
+                    display: flex;
+                    width: 450px;
+                    padding:15px;
+                    margin: 6px;
+                    background-color: hsl(300, 24%, 96%);
+                    border-radius: 10px;
+
+                    li{
+                        padding: 0 5px;
+                    }
+                    
+                    h4{
+                        padding-left: 30px;
+                    }
+                }
+
+                
+            }
+
+            .guru{
+                margin-left: 35px;
+            }
+
+            .best-tech{
+                margin-left: 70px;
+            }
         }
 
         &-users{
-            border: 5px dashed rgb(19, 104, 16);
-            display: flex;
+            
             grid-area: users;
+            display: flex;
+            justify-content: space-between;
+            color: #fff;
+            
+
+            &-1{
+                width: 280px;
+                height: 170px;
+                padding: 30px;
+                margin: 0 0 0 0;
+                background-color: hsl(300, 43%, 22%);
+                border-radius: 10px;
+
+
+                &-info{
+                    display: flex;
+                    margin: 10px 0 25px 0;
+                     
+
+                    img{
+                        border-radius: 50%;
+                        width: 15%;
+                        height: 15%;
+                        margin: -2px 20px 0 0;
+                    }
+
+                    p{
+                        color: hsl(333, 80%, 67%);
+                        margin-top: 5px;
+                        
+                    }
+                }
+
+                p{
+                    font-size: 12px;
+                    line-height: 1.7;
+                }
+            }
+
+            &-2{
+                width: 280px;
+                height: 170px;
+                padding: 30px;
+                margin: 20px 0 0 0;
+                background-color: hsl(300, 43%, 22%);
+                border-radius: 10px;
+
+
+                &-info{
+                    display: flex;
+                    margin: 10px 0 25px 0;
+                     
+
+                    img{
+                        border-radius: 50%;
+                        width: 15%;
+                        height: 15%;
+                        margin: -2px 20px 0 0;
+                    }
+
+                    p{
+                        color: hsl(333, 80%, 67%);
+                        margin-top: 5px;
+                        
+                    }
+                }
+
+                p{
+                    font-size: 12px;
+                    line-height: 1.7;
+                }
+            }
+
+            &-3{
+                width: 280px;
+                height: 170px;
+                padding: 30px;
+                margin: 40px 0 0 0;
+                background-color: hsl(300, 43%, 22%);
+                border-radius: 10px;
+
+
+                &-info{
+                    display: flex;
+                    margin: 10px 0 25px 0;
+                     
+
+                    img{
+                        border-radius: 50%;
+                        width: 15%;
+                        height: 15%;
+                        margin: -2px 20px 0 0;
+                    }
+
+                    p{
+                        color: hsl(333, 80%, 67%);
+                        margin-top: 5px;
+                        
+                    }
+                }
+
+                p{
+                    font-size: 12px;
+                    line-height: 1.7;
+                }
+            }
+
+
+            
         }
 
     }

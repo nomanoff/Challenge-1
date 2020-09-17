@@ -5,20 +5,25 @@
 
 body {
   font-size: 11px;
-  text-align: center;
   font-size: 15px;
+  font-family: 'Spartan', sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
-  background-image: url(/images/bg-pattern-bottom-desktop.svg);
-  background-image: url(/images/bg-pattern-top-desktop.svg);
+  background-image: url(/images/bg-pattern-bottom-desktop.svg), url(/images/bg-pattern-top-desktop.svg);
+  background-repeat: no-repeat;
   width: 100%;
   max-width: 1440px;
   height: 100vh;
+  margin: 0 auto;
 }
 
 .container .main {
@@ -33,18 +38,156 @@ a {
 }
 
 .container .main-text {
-  border: 5px dashed #15830b;
+  width: 420px;
   grid-area: message;
+  text-align: left;
+  color: #502050;
+}
+
+.container .main-text h2 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.container .main-text p {
+  font-size: 14px;
+  line-height: 1.6;
 }
 
 .container .main-rates {
-  border: 5px dashed #136810;
   grid-area: rate;
+  list-style: none;
+}
+
+.container .main-rates-review {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .main-rates-review ul {
+  display: flex;
+  width: 450px;
+  padding: 15px;
+  margin: 6px;
+  background-color: #f7f2f7;
+  border-radius: 10px;
+}
+
+.container .main-rates-review ul li {
+  padding: 0 5px;
+}
+
+.container .main-rates-review ul h4 {
+  padding-left: 30px;
+}
+
+.container .main-rates .guru {
+  margin-left: 35px;
+}
+
+.container .main-rates .best-tech {
+  margin-left: 70px;
 }
 
 .container .main-users {
-  border: 5px dashed #136810;
-  display: flex;
   grid-area: users;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.container .main-users-1 {
+  width: 280px;
+  height: 170px;
+  padding: 30px;
+  margin: 0 0 0 0;
+  background-color: #502050;
+  border-radius: 10px;
+}
+
+.container .main-users-1-info {
+  display: flex;
+  margin: 10px 0 25px 0;
+}
+
+.container .main-users-1-info img {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  margin: -2px 20px 0 0;
+}
+
+.container .main-users-1-info p {
+  color: #ee68a4;
+  margin-top: 5px;
+}
+
+.container .main-users-1 p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.container .main-users-2 {
+  width: 280px;
+  height: 170px;
+  padding: 30px;
+  margin: 20px 0 0 0;
+  background-color: #502050;
+  border-radius: 10px;
+}
+
+.container .main-users-2-info {
+  display: flex;
+  margin: 10px 0 25px 0;
+}
+
+.container .main-users-2-info img {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  margin: -2px 20px 0 0;
+}
+
+.container .main-users-2-info p {
+  color: #ee68a4;
+  margin-top: 5px;
+}
+
+.container .main-users-2 p {
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.container .main-users-3 {
+  width: 280px;
+  height: 170px;
+  padding: 30px;
+  margin: 40px 0 0 0;
+  background-color: #502050;
+  border-radius: 10px;
+}
+
+.container .main-users-3-info {
+  display: flex;
+  margin: 10px 0 25px 0;
+}
+
+.container .main-users-3-info img {
+  border-radius: 50%;
+  width: 15%;
+  height: 15%;
+  margin: -2px 20px 0 0;
+}
+
+.container .main-users-3-info p {
+  color: #ee68a4;
+  margin-top: 5px;
+}
+
+.container .main-users-3 p {
+  font-size: 12px;
+  line-height: 1.7;
 }
 /*# sourceMappingURL=style.css.map */
