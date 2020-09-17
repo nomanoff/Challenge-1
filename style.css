@@ -1,1 +1,50 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 11px;
+  text-align: center;
+  font-size: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  background-image: url(/images/bg-pattern-bottom-desktop.svg);
+  background-image: url(/images/bg-pattern-top-desktop.svg);
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+}
+
+.container .main {
+  display: grid;
+  width: 76%;
+  height: 100vh;
+  margin: 0 auto;
+  align-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  grid-template-areas: 'message rate' 'users users';
+}
+
+.container .main-text {
+  border: 5px dashed #15830b;
+  grid-area: message;
+}
+
+.container .main-rates {
+  border: 5px dashed #136810;
+  grid-area: rate;
+}
+
+.container .main-users {
+  border: 5px dashed #136810;
+  display: flex;
+  grid-area: users;
+}
+/*# sourceMappingURL=style.css.map */

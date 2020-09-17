@@ -1,0 +1,62 @@
+
+*{
+    // box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 11px;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+a{
+   text-decoration: none; 
+}
+
+
+
+.container{
+    background-image: url(/images/bg-pattern-bottom-desktop.svg) ;
+    background-image: url(/images/bg-pattern-top-desktop.svg);
+    width: 100%;
+    max-width: 1440px;
+    height: 100vh;
+    
+
+    .main{
+        display: grid;
+        width: 76%;
+        height: 100vh;
+        margin: 0 auto;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3rem;
+        grid-template-areas: 
+        
+         'message rate'
+         'users users';
+
+        &-text{
+          
+            border: 5px dashed rgb(21, 131, 11);
+            grid-area: message;
+            
+        }
+
+        &-rates{
+           
+            border: 5px dashed rgb(19, 104, 16);
+            grid-area: rate;
+        }
+
+        &-users{
+            border: 5px dashed rgb(19, 104, 16);
+            display: flex;
+            grid-area: users;
+        }
+
+    }
+}
