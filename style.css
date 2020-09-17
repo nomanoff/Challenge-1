@@ -28,7 +28,7 @@ ul {
 
 .container .main {
   display: grid;
-  width: 76%;
+  width: 80%;
   height: 100vh;
   margin: 0 auto;
   align-content: center;
@@ -38,7 +38,7 @@ ul {
 }
 
 .container .main-text {
-  width: 420px;
+  width: 100%;
   grid-area: message;
   text-align: left;
   color: #502050;
@@ -58,6 +58,7 @@ ul {
 
 .container .main-rates {
   grid-area: rate;
+  width: 100%;
   list-style: none;
 }
 
@@ -99,10 +100,10 @@ ul {
 }
 
 .container .main-users-1 {
-  width: 280px;
+  width: 94%;
   height: 170px;
   padding: 30px;
-  margin: 0 0 0 0;
+  margin: 0 25px 0 0;
   background-color: #502050;
   border-radius: 10px;
 }
@@ -130,10 +131,10 @@ ul {
 }
 
 .container .main-users-2 {
-  width: 280px;
+  width: 94%;
   height: 170px;
   padding: 30px;
-  margin: 20px 0 0 0;
+  margin: 20px 25px 0 0;
   background-color: #502050;
   border-radius: 10px;
 }
@@ -161,7 +162,7 @@ ul {
 }
 
 .container .main-users-3 {
-  width: 280px;
+  width: 94%;
   height: 170px;
   padding: 30px;
   margin: 40px 0 0 0;
@@ -189,5 +190,55 @@ ul {
 .container .main-users-3 p {
   font-size: 12px;
   line-height: 1.7;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    background-image: none;
+  }
+  .container .main {
+    width: 95%;
+    grid-template-columns: 1fr;
+    margin-top: 20rem;
+    grid-template-areas: 'message' 'rate' 'users';
+  }
+  .container .main-text {
+    margin-top: 5rem;
+    text-align: center;
+  }
+  .container .main-rates ul {
+    width: 90%;
+    margin: 5px;
+    padding: 5px;
+  }
+  .container .main-rates ul h4 {
+    padding-left: 2px;
+    display: none;
+  }
+  .container .main-rates ul > li {
+    display: flex;
+  }
+  .container .main-rates .guru {
+    margin-left: 0;
+  }
+  .container .main-rates .best-tech {
+    margin-left: 0;
+  }
+  .container .main-users {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .container .main-users-1 {
+    padding: 10px;
+    margin: 0 0 10px 0;
+  }
+  .container .main-users-2 {
+    margin: 0 0 10px 0;
+    padding: 10px;
+  }
+  .container .main-users-3 {
+    margin: 0 0 10px 0;
+    padding: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
