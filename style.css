@@ -38,7 +38,7 @@ ul {
 }
 
 .container .main-text {
-  width: 100%;
+  width: 80%;
   grid-area: message;
   text-align: left;
   color: #502050;
