@@ -22,7 +22,7 @@ ul {
   background-repeat: no-repeat;
   width: 100%;
   max-width: 1440px;
-  height: 100vh;
+  height: 120vh;
   margin: 0 auto;
 }
 
@@ -38,14 +38,14 @@ ul {
 }
 
 .container .main-text {
-  width: 80%;
+  width: 100%;
   grid-area: message;
   text-align: left;
   color: #502050;
 }
 
 .container .main-text h2 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 1rem;
